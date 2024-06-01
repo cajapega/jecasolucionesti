@@ -38,6 +38,13 @@ h6 {
     font-size: 1em;
 }
 
+/*Hace que todos los elementos img se adapten a la altura del contenedor
+ padre y que la anchura sea auto para mantener la proporcion*/
+img {
+    width: auto;
+    height: 100%;
+}
+
 /* Enlaces */
 a {
     color: #3498db;
