@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 10fr 1fr;
     background-color: #3A82CE; /*#333*/
+    top: 0;
     height: 8vh;
     align-items: center;
     justify-items: center;

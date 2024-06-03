@@ -1,0 +1,53 @@
+.btn {
+    padding: 10px 20px;
+    background-color: #3A82CE;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.btn-light-blue {
+    background-color: #3A82CE;
+}
+
+.btn-light-blue:hover {
+    background-color: #3A96CE;
+}
+
+.btn-dark-blue {
+    background-color:#064489;
+        
+}
+
+.btn-dark-blue:hover {
+    background-color: #0855A7;
+}
+
+.btn-white {
+    background-color: #F0EBE1;
+    color: rgb(47, 46, 46);
+}
+
+.btn-white:hover {
+    background-color: #F4F5F5;
+}
+
+.btn-fluorescent-green {
+    background-color: #96F60B;
+    color: rgb(47, 46, 46);
+}
+
+.btn-fluorescent-green:hover {
+    background-color: #B2FF3A;
+
+}
+
+.btn-pink {
+    background-color: #F60D63;
+}
+
+.btn-pink:hover {
+    background-color: #FF4B89;
+}

@@ -1,0 +1,31 @@
+.hero {
+    display: grid;
+    background-color: azure;
+    margin-block-start: 8vh;
+    height: 92vh;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    align-items: center;
+    justify-items: center;
+}
+
+.hero h1 {
+    padding-inline-start: 20%;
+    text-align: center;    
+}
+
+.hero .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2em;
+        padding-inline: 10%;  
+    }
+}
+
+
+
