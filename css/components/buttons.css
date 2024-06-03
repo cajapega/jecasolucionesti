@@ -34,13 +34,12 @@
     background-color: #F4F5F5;
 }
 
-.btn-fluorescent-green {
-    background-color: #96F60B;
-    color: rgb(47, 46, 46);
+.btn-green {
+    background-color:  #28a745;
 }
 
-.btn-fluorescent-green:hover {
-    background-color: #B2FF3A;
+.btn-green:hover {
+    background-color: #34d058 ;
 
 }
 
@@ -50,4 +49,12 @@
 
 .btn-pink:hover {
     background-color: #FF4B89;
+}
+
+.btn-red {
+    background-color: #dc3545;
+}
+
+.btn-red:hover {
+    background-color: #e57373;
 }
