@@ -1,0 +1,22 @@
+.transparentOverlay:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(4px) contrast(70%);
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0; /* Overlay semitransparente */
+}
+
+.fadeIn {
+    opacity: 0;
+    animation: fadeIn 3s forwards;
+}
+@keyframes fadeIn {
+to {
+    opacity: 1;
+}
+}
+
