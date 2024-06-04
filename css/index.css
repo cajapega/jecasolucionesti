@@ -1,7 +1,7 @@
 .hero {
     display: flex;
-    margin-block-start: 8vh;
-    height: 92vh;
+    top: 11vh;
+    height: 90vh;
     align-items: center;
     justify-content: center;
     background: url('/img/hero.jpeg') no-repeat center center/cover;
@@ -54,6 +54,10 @@
 }
 
 @media (max-width: 768px) {
+    .hero {
+        height: 90vh;
+    }
+
     .hero .content {
         display: flex;
         flex-direction: column;

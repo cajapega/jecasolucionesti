@@ -6,7 +6,7 @@
     right: 0;
     bottom: 0;
     backdrop-filter: blur(4px) contrast(70%);
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(58, 150, 206, 0.4);  /*rgba(0, 0, 0, 0.4)*/
     z-index: 0; /* Overlay semitransparente */
 }
 
@@ -19,4 +19,36 @@ to {
     opacity: 1;
 }
 }
+
+/**/
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes glow {
+    0% {
+        filter: drop-shadow(0 0 5px white); /*#33ccff*/
+    }
+    50% {
+        filter: drop-shadow(0 0 20px #33ccff);
+    }
+    100% {
+        filter: drop-shadow(0 0 5px white);
+    }
+}
+
+.glow {
+    animation: slideIn 4s ease-out, glow 4s infinite;
+    display: inline-block;
+}
+
+
 

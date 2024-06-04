@@ -11,27 +11,45 @@
     <link rel="stylesheet" href="/css/layout/footer.css">
     <link rel="stylesheet" href="/css/components/buttons.css">
     <link rel="stylesheet" href="/css/components/effects.css">
-    <script src="/js/script.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script defer src="/js/script.js" defer></script>
 </head>
 <body>
     <!--Navbar-->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
+      
+      <!--
+      <div class="contactInfo">
+        <p>Siguenos en:</p>
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <p>Escribanos:</p>
+        <a href="https://www.tiktok.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        <p>Converse con nosotros:</p>
+        <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+      -->
+      <div class="mainNav">    
         <img class="logo" src="/img/logos/medoc-logo.png" alt="Logo">
         <div class="nav-links" id="nav-links">
-            <a href="#">Inicio</a>
-            <a href="#">Contáctenos</a>
-            <a href="#">Nuestros Clientes</a>
-            <a href="#">Servicios</a>
-            <a href="#">Nosotros</a>
-        </div> 
+          <a href="#">Inicio</a>
+          <a href="#">Contáctenos</a>
+          <a href="#">Nuestros Clientes</a>
+          <a href="#">Servicios</a>
+          <a href="#">Nosotros</a>
+          </div> 
         <div class="hamburger" id="hamburger">
-            &#9776;
+          &#9776;
         </div>
+      </div>
     </nav>
     <!--Section Hero-->
     <section class="hero transparentOverlay">
         <div class="content fadeIn">
-            <img class="recolorear" src="/img/logos/medoc-white-logo.png" alt="Logo">
+            <img src="/img/logos/medoc-white-logo.png" alt="Logo">
             <div class="phrase">
                 <h2>MAS QUE SERVICIOS,<br>SOMOS SU SOCIO ESTRATÉGICO</h2>
                 <div class="buttons">
@@ -43,6 +61,75 @@
     </section>
     <section class="hero2">
     </section>
-    </section>
+    <!--Section Footer-->
+    <footer>
+        <div class="footerContainer">
+          <div class="footerLogo">
+            <img class="glow" src="/img/logos/medoc-logo.png" alt="Medoc Logo">
+          </div>
+          <div class="footerContact">
+            <h4>Información de Contacto</h4>
+            <p>Dirección: Calle Salud 123, Quito, Ecuador</p>
+            <p>Teléfono: +593 123 456 7890</p>
+            <p>Email: <a href="mailto:contacto@medoc.com">contacto@medoc.com</a></p>
+          </div>
+          <div class="footerNav">
+            <h4>Menú de Navegación</h4>
+            <ul>
+              <li><a href="/">Inicio</a></li>
+              <li><a href="/sobre-nosotros">Sobre Nosotros</a></li>
+              <li><a href="/servicios">Servicios</a></li>
+              <li><a href="/blog">Blog</a></li>
+              <li><a href="/contacto">Contáctenos</a></li>
+            </ul>
+            <ul>
+              <li><a href="/politica-de-privacidad">Política de Privacidad</a></li>
+              <li><a href="/terminos-y-condiciones">Términos y Condiciones</a></li>
+            </ul>
+          </div>
+          <div class="footerServices">
+            <h4>Servicios de Salud</h4>
+            <ul>
+              <li><a href="/consultas">Consultas</a></li>
+              <li><a href="/laboratorio">Laboratorio</a></li>
+              <li><a href="/especialidades">Especialidades</a></li>
+            </ul>
+          </div>
+          <div class="footerResources">
+            <h4>Recursos:</h4>
+            <ul>
+              <li><a href="/blog-de-salud">Blog de Salud</a></li>
+              <li><a href="/guias-medicas">Guías Médicas</a></li>
+              <li><a href="/preguntas-frecuentes">Preguntas Frecuentes</a></li>
+            </ul>
+          </div>
+          <div class="footerSocial">
+            <h4>Síguenos en:</h4>
+            <a href="https://facebook.com/medoc" target="_blank">Facebook</a>
+            <a href="https://twitter.com/medoc" target="_blank">Twitter</a>
+            <a href="https://instagram.com/medoc" target="_blank">Instagram</a>
+            <a href="https://linkedin.com/company/medoc" target="_blank">LinkedIn</a>
+          </div>
+          <!--
+          <div class="footer-newsletter">
+            <h4>Suscríbete a nuestro boletín:</h4>
+            <form action="/suscribirse" method="post">
+              <input type="email" name="email" placeholder="Tu correo electrónico" required>
+              <button type="submit">Suscribirse</button>
+            </form>
+          </div>*
+          <div class="footer-patient-portal">
+            <a href="/portal-de-pacientes">Acceso a Portal de Pacientes</a>
+          </div>
+          -->
+          <div class="footerMap">
+            <a href="/mapa-del-sitio">Mapa del Sitio</a>
+          </div>
+          <div class="footerCopyright">
+            <p>© 2024 Medoc. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </footer>
+      
 </body>
 </html>

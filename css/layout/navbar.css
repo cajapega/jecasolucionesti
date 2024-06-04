@@ -1,9 +1,39 @@
 .navbar {
+    display: flex;
+}
+
+.navbar .contactInfo {
+    display: flex;
+    background-color: white;
+    height: 5vh;
+    width: 100%;
+    z-index: 10;
+    align-items: center;
+    justify-content: end;
+    padding-inline-end: 8%;
+    gap: 1.7%;
+    transition: opacity 0.5s ease-in-out, height 1s ease-in-out;
+}
+
+.navbar .contactInfo p {
+    color: #333;
+    font-size: 0.8em;
+}
+
+.navbar .contactInfo a {
+    color: #333;
+}
+
+.navbar .contactInfo a:hover {
+    color: #3A82CE;
+}
+
+.mainNav {
     display: grid;
     grid-template-columns: 1fr 10fr 1fr;
     background-color: #ffffff; /*#F4F5F5 #3A82CE; #333;*/
-    top: 0;
-    height: 8vh;
+    top: 5vh;
+    height: 10vh;
     align-items: center;
     justify-items: center;
     position: fixed;
@@ -11,63 +41,71 @@
     z-index: 10;
 }
 
-.navbar img {
+.mainNav img {
     justify-self: center;
-    height: 6.5vh;
+    height: 10vh;
+    padding-inline-start: 50%;
 }
 
-.nav-links {
+.mainNav .nav-links {
     display: flex;
     gap: 25px;
     justify-self: end;
 }
 
-.navbar .nav-links a {
+.mainNav .nav-links a {
     font-weight: 600;
     color: #333;
 }
 
-.navbar .nav-links a:hover {
+.mainNav .nav-links a:hover {
     color: #3A82CE;
 }
 
-.navbar .hamburger {
+.mainNav .hamburger {
+    grid-row: 2;
     display: none;
 }
 
 @media (max-width: 768px) {
-    .navbar {
-        grid-template-columns: 1fr 1fr;
+
+    .navbar .contactInfo {
+        display:none;
+    }
+
+    .navbar .mainNav {
+        position: fixed;
+        top: 0vh;
+        display: flex;
+        justify-content: space-between;
     }
     
-    .navbar img {
-        justify-self: start;
+    .mainNav img {
         padding-inline-start: 5%;
     }
     
-    .nav-links {
+    .mainNav .nav-links {
         display: none;
         flex-direction: column;
         align-items: center;
         position: fixed;
-        top: 8vh;
+        top: 10vh;
         left: 0;
         width: 100%;
         background-color: #ffffff; /*#333*/
         padding-block-end: 10vh;
     }
     
-    .navbar .nav-links a {
+    .mainNav .nav-links a {
         padding-block: 2vh;
     }
 
-    .navbar .nav-links a:first-child {
+    .mainNav .nav-links a:first-child {
         padding-block-start: 8vh;
     }
     
-    .navbar .hamburger {
+    .mainNav .hamburger {
         display: block;
-        justify-self: end;
         padding-inline-end: 5%;
         font-size: 2em;
         cursor: pointer;
