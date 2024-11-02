@@ -25,13 +25,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 newContactInfo.classList.add('contactInfo');
                 newContactInfo.innerHTML = `
                     <p>Siguenos en:</p>
-                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61567720207045&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/jecasolucionesti/" target="_blank"><i class="fab fa-instagram"></i></a>
                     <p>Escribanos:</p>
-                    <a href="https://www.tiktok.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="mailto:info@jecait.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
                     <p>Converse con nosotros:</p>
-                    <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://wa.me/593967399852" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                 `;
                 navbar.insertBefore(newContactInfo, navbar.firstChild);
             }

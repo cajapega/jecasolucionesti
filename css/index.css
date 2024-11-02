@@ -2,12 +2,18 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.carousel, .hero, .footer {
+    margin-inline-start: 1.5%;
+    margin-inline-end: 1.5%;
+
+}
+
 /*Seccion Carrousel*/
 .carousel {
     position: relative;
     top: 2vh;
     width: 100%;
-    max-width: 100%;
+    max-width: 97%;
     overflow: hidden;
 }
 
@@ -78,6 +84,7 @@ body {
 .services > h2 {
     text-align: center;
     margin-block: 5%;
+    color: #002252;
 }
 
   .card-container {
@@ -116,7 +123,7 @@ body {
   .card-text {
     font-size: 1rem;
     color: #555;
-  }
+  }   
   
   .card-footer {
     align-content: center;
