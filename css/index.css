@@ -44,7 +44,7 @@ body {
     border-radius: 10px;
 }
 
-.carousel-caption > h4, p {
+.carousel-caption h4, .carousel-caption p {
     text-align: center;
     color: white;
 }
@@ -162,7 +162,7 @@ body {
 
     background: rgba(0, 0, 0, 0.4);
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .hero .content img {
@@ -173,6 +173,7 @@ body {
 .phrase p {
     font-size: 1.5em;
     margin-bottom: 20px;
+    color: white;
 }
 
 .support div {
@@ -183,9 +184,22 @@ body {
 
 /*hero 2, hero3*/
 
-.hero2, .hero3 {
-    height: 60vh;
+.hero2 {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    height: 70vh;
 }
+
+.chat .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}  
+
+.chat > h4, p, .formulario > h4, p {
+    color:black;
+}  
 
 
 @media (max-width: 768px) {

@@ -45,7 +45,11 @@
 
 .footer .footerCopyright {
     margin-block: 5%;
+}
+
+.footer .footerCopyright p {
     font-weight: bolder;
+    color: white;
 }
 
 
