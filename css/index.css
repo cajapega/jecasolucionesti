@@ -70,6 +70,62 @@ body {
     right: 10px;
 }
 
+/*Seccion servicios*/
+.services {
+    margin: 5%;
+}
+
+.services > h2 {
+    text-align: center;
+    margin-block: 5%;
+}
+
+  .card-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    flex: 1 1 calc(33.333% - 1rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-img {
+    width: 100%;
+    max-height: 40%;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .card-title {
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .card-footer {
+    align-content: center;
+    padding: 0.75rem 1rem;
+    background-color: #f8f9fa;
+    text-align: right;
+  }
+  
+
 /*Seccion Hero*/
 .hero {
     display: flex;
@@ -139,6 +195,15 @@ body {
     .carousel-caption > p {
         font-size: 1em;
     }
+
+    .services > h2 {
+        margin-block: 15%;
+    }
+
+    .card {
+        flex: 1 1 100%;
+    }
+
 
     .hero {
         height: 90vh;

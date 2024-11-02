@@ -9,9 +9,11 @@
 }
 
 .btn-azul-marino {
+    color: white;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 20px;
+    border: 0;
     background-color: #1F4E79;
 }
 
@@ -20,9 +22,12 @@
 }
 
 .btn-azul-medio {
+    font-weight:bolder;
+    color: white;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 20px;
+    border: 0;
     background-color:#295DB8;
         
 }
@@ -32,9 +37,11 @@
 }
 
 .btn-blanco {
+    font-weight:bolder;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 20px;
+    border: 0;
     background-color: #FFFFFF;
 }
 
@@ -43,9 +50,11 @@
 }
 
 .btn-gris-claro {
+    font-weight:bolder;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 20px;
+    border: 0;
     background-color: #D3D3D3;
 }
 
