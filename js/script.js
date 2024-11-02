@@ -1,3 +1,7 @@
+AOS.init({
+    once: false 
+}
+);
 
 /*Hamburger*/
 document.getElementById('hamburger').onclick = function() {
@@ -60,4 +64,34 @@ window.onscroll = function() {
         mainNav.style.top = "5vh";
     }
 };
+
+/*Script Carrousel*/
+const items = document.querySelectorAll('.carousel-item');
+const nextButton = document.querySelector('.next');
+const prevButton = document.querySelector('.prev');
+let currentIndex = 0;
+
+function showSlide(index) {
+    items.forEach((item, i) => {
+        item.classList.toggle('active', i === index);
+    });
+    const offset = -index * 100;
+    document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
+}
+
+nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % items.length;
+    showSlide(currentIndex);
+});
+
+prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + items.length) % items.length;
+    showSlide(currentIndex);
+});
+
+// Opcional: Autoplay
+setInterval(() => {
+    currentIndex = (currentIndex + 1) % items.length;
+    showSlide(currentIndex);
+}, 5000); // Cambiar de slide cada 5 segundos
 

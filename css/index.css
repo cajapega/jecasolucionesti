@@ -1,11 +1,85 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Seccion Carrousel*/
+.carousel {
+    position: relative;
+    top: 2vh;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    position: relative;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 40%;
+    left: 30%;
+    right: 30%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.carousel-caption > h4, p {
+    text-align: center;
+    color: white;
+}
+
+.carousel-caption > h4 {
+    font-size: 3em;
+}
+
+.carousel-caption > p {
+    font-size: 1.2em;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/*Seccion Hero*/
 .hero {
     display: flex;
-    top: 11vh;
+    top: 0vh; /*11*/
     height: 90vh;
     align-items: center;
     justify-content: center;
-    background: url('/img/hero.jpeg') no-repeat center center/cover;
+    background: url('/img/2.jpg') no-repeat center center/cover;
     position: relative;
+    /*margin-inline: 1.7%;*/
 }
 
 .hero .content {
@@ -22,6 +96,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .hero .content img {
@@ -29,31 +107,39 @@
     height: 45vh;
 }
 
-.hero h2 {
-    font-size: 2.5em;
-    font-weight: 600;
-    line-height: 1.5;
-    color: #ffff;
+.phrase p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.support div {
     text-align: center;
-    margin-block-end: 5%;
+    min-width: 400px;
+
+} 
+
+/*hero 2, hero3*/
+
+.hero2, .hero3 {
+    height: 60vh;
 }
 
-.hero .content .buttons {
-    display: flex;
-    gap: 20px;
-}
-
-.hero2 {
-    height: 100vh;
-}
-
-.hero3 {
-    display: none;
-    background-color: azure;
-    height: 100vh;
-}
 
 @media (max-width: 768px) {
+    .carousel-caption {
+        bottom: 20%;
+        left: 10%;
+        right: 10%;
+    }
+    
+    .carousel-caption > h4 {
+        font-size: 2em;
+    }
+    
+    .carousel-caption > p {
+        font-size: 1em;
+    }
+
     .hero {
         height: 90vh;
     }
@@ -61,12 +147,7 @@
     .hero .content {
         display: flex;
         flex-direction: column;
-        padding-inline: 0%;
-    }
-    
-    .hero .hero-info {
-        display: flex;
-        flex-direction: column;
+        padding-inline: 5%;
     }
     
     .hero .content img {
@@ -74,12 +155,11 @@
         padding-bottom: 12vh;
     }
 
-    .hero .content .buttons {
-        flex-direction: column;
+    .phrase p {
+        font-size: 1em;
+        margin-bottom: 20px;
     }
 
-    .hero h2 {
-        font-size: 1.75em;
-        margin-inline: 10%;       
-    }
+    
+
 }
