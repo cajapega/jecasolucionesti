@@ -4,7 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Navbar Example</title>
+  
+  <title>JECA Soluciones T.I.</title>
+  <link rel="icon" type="image/png" href="/img/logos/JECA2-Color.png" sizes="32x32">
+
+
   <link rel="stylesheet" href="/css/base/reset.css">
   <link rel="stylesheet" href="/css/base/typography.css">
   <link rel="stylesheet" href="/css/index.css">
@@ -20,6 +24,10 @@
 
   <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script defer src="/js/script.js" defer></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">emailjs.init('3rFll9wK2o1tpAMop')</script>
 </head>
 
 <body>
@@ -150,27 +158,32 @@
       </div>
     </div>
   </section>
-  <div class="hero2">
-    <div class="chat">
+  <div class="hero2" data-aos="zoom-in-down" data-aos-duration="3000">
+    <div class="chatea-nosotros">
       <h4>Conversemos</h4>
       <p>Contáctenos para crear una solución a su medida. Estamos listos para satisfacer sus necesidades en el ámbito de TI y asesorarle en la implementación de tecnologías adecuadas para su negocio</p>
-      <button class="btn-azul-medio">Chatear</button>
+      <button id="chatButton" class="btn-azul-medio">Chatea con nosotros</button>
     </div>
-    <div class="formulario">
-      <form id="contact-form">
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="message">Mensaje:</label>
-        <textarea id="message" name="message" required></textarea>
-        
-        <button type="submit">Enviar</button>
-    </form>
-    </div>
-    
+      <form id="form">
+        <label class="titulo-formulario" for="to_name">Contáctenos</label>
+        <div class="field">
+          <label for="to_name">Nombre de destinatario</label>
+          <input type="text" name="to_name" id="to_name">
+        </div>
+        <div class="field">
+          <label for="from_name">Su nombre</label>
+          <input type="text" name="from_name" id="from_name">
+        </div>
+        <div class="field">
+          <label for="message">Su mensaje aquí:</label>
+          <input type="text" name="message" id="message">
+        </div>
+        <div class="field">
+          <label for="reply_to">Su correo electrónico</label>
+          <input type="text" name="reply_to" id="reply_to">
+        </div>
+        <input type="submit" id="button-form" value="Send Email" >
+      </form>
   </div>
   <!--Section Footer-->
   <footer class="footer" data-aos="zoom-in-down" data-aos-duration="3000">
@@ -218,5 +231,4 @@
     </div>
   </footer>
 </body>
-
 </html>
