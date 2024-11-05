@@ -2,18 +2,18 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.carousel, .hero, .hero2, .footer {
+/*.carousel, .hero, .hero2, .footer {
     margin-inline-start: 1.5%;
     margin-inline-end: 1.5%;
 
-}
+}*/
 
 /*Seccion Carrousel*/
 .carousel {
     position: relative;
     top: 2vh;
     width: 100%;
-    max-width: 97%;
+    max-width: 100%; /*97%;*/
     overflow: hidden;
 }
 
@@ -37,8 +37,8 @@ body {
 .carousel-caption {
     position: absolute;
     bottom: 40%;
-    left: 30%;
-    right: 30%;
+    left: 27%;
+    right: 27%;
     background: rgba(0, 0, 0, 0.7);
     padding: 10px;
     border-radius: 10px;
@@ -250,7 +250,7 @@ body {
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
 }
 
-#button-form {
+#formButton {
     width: 100%;
     padding: 10px;
     font-size: 16px;
@@ -269,18 +269,27 @@ body {
 
 
 @media (max-width: 768px) {
+    .carousel {
+        top: 11vh;
+    }
+
     .carousel-caption {
-        bottom: 20%;
-        left: 10%;
-        right: 10%;
+        bottom: 17%;
+        left: 12%;
+        right: 12%;
     }
     
     .carousel-caption > h4 {
-        font-size: 2em;
+        font-size: 1.7em;
     }
     
     .carousel-caption > p {
-        font-size: 1em;
+        font-size: 0.9em;
+    }
+
+    .services {
+        position: relative;
+        top: 11vh;
     }
 
     .services > h2 {
@@ -291,9 +300,11 @@ body {
         flex: 1 1 100%;
     }
 
-
     .hero {
+        position: relative;
+        top: 11vh;
         height: 90vh;
+
     }
 
     .hero .content {
@@ -312,6 +323,11 @@ body {
         margin-bottom: 20px;
     }
 
+    .hero2 {
+        position: relative;
+        top: 11vh;
+    }
+
     .hero2 .chatea-nosotros {
         display: none;
     }
@@ -320,4 +336,6 @@ body {
         font-size: 1.7em;
         margin-inline: 30%;
     }
+
+
 }

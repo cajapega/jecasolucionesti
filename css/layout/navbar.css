@@ -17,10 +17,11 @@
 
 .navbar .contactInfo p {
     color: #333;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 .navbar .contactInfo a {
+    font-size: 1.3em;
     color: #333;
 }
 
@@ -54,6 +55,7 @@
 }
 
 .mainNav .nav-links a {
+    font-size: 1.4em;
     font-weight: 600;
     color: #333;
 }

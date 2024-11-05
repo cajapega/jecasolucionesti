@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <title>JECA Soluciones T.I.</title>
   <link rel="icon" type="image/png" href="/img/logos/JECA2-Color.png" sizes="32x32">
 
@@ -23,11 +23,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
 
   <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script defer src="/js/script.js" defer></script>
+  <script src="/js/script.js" defer></script>
 
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript"> emailjs.init('3rFll9wK2o1tpAMop') </script>
 
-<script type="text/javascript">emailjs.init('3rFll9wK2o1tpAMop')</script>
 </head>
 
 <body>
@@ -36,9 +36,9 @@
     <div class="mainNav">
       <img class="logo" src="/img/logos/JECA2-Color.png" alt="Logo">
       <div class="nav-links" id="nav-links">
-        <a href="#">Inicio</a>
-        <a href="#">Contáctenos</a>
-        <a href="#">Servicios</a>
+        <a href="#carouselExample">Inicio</a>
+        <a href="#services">Servicios</a>
+        <a href="#heroForm">Contáctenos</a>
         <!--<a href="#">Nosotros</a>-->
       </div>
       <div class="hamburger" id="hamburger">&#9776;</div>
@@ -51,7 +51,7 @@
         <img src="/img/8.jpeg" alt="Slide 1">
         <div class="carousel-caption">
           <h4><strong>Soporte de Hardware y Software</strong></h4>
-          <p>Instalación, mantenimiento y reparación de equipos informáticos y sistemas operativos.</p>
+          <p>Instalación, mantenimiento y reparación de computadoras, laptops, servidores y sistemas operativos, en sitio o remoto segun el caso.</p>
         </div>
       </div>
       <div class="carousel-item transparentOverlay">
@@ -65,14 +65,15 @@
         <img src="/img/4.jpg" alt="Slide 3">
         <div class="carousel-caption">
           <h4><strong>Cableado Estructurado</strong></h4>
-          <p>Diseño, instalación y organización de redes cableadas de alta eficiencia y durabilidad, cumpliendo con normas de calidad y seguridad.</p>
+          <p>Diseño, instalación y organización de redes cableadas y WiFi para alta productividad</p>
         </div>
       </div>
       <div class="carousel-item transparentOverlay">
         <img src="/img/6.jpeg" alt="Slide 4">
         <div class="carousel-caption">
           <h4><strong>Sistemas de CCTV</strong></h4>
-          <p>Puesta en marcha de sistemas de videovigilancia, incluyendo cámaras de seguridad y equipos de grabación, con configuraciones adaptadas a las necesidades del cliente.</p>
+          <p>Puesta en marcha de sistemas de videovigilancia, incluyendo cámaras de seguridad y equipos de grabación,
+            con configuraciones adaptadas a las necesidades del cliente.</p>
         </div>
       </div>
       <div class="carousel-item transparentOverlay">
@@ -95,41 +96,53 @@
         <img src="/img/9.png" alt="Image 1" class="card-img">
         <div class="card-body">
           <h5 class="card-title">Soporte de Hardware y Software</h5>
-          <p class="card-text">Instalación, mantenimiento y reparación de equipos informáticos y sistemas operativos.</p>
+          <p class="card-text">Instalación, mantenimiento y reparación de equipos informáticos y sistemas operativos.
+          </p>
         </div>
+        <!--
         <div class="card-footer">
-          <button class="btn-azul-medio">Mas información</button>
+          <button id="chatButton" class="btn-azul-medio">Mas información</button>
         </div>
+        -->
       </div>
       <div class="card" data-aos="zoom-in-down" data-aos-duration="3000">
         <img src="/img/11.jpg" alt="Image 2" class="card-img">
         <div class="card-body">
           <h5 class="card-title">Servidores y Virtualización</h5>
-          <p class="card-text">Implementación y configuración de servidores físicos y virtuales, con soluciones escalables para optimizar recursos y rendimiento.</p>
+          <p class="card-text">Implementación y configuración de servidores físicos y virtuales, con soluciones
+            escalables para optimizar recursos y rendimiento.</p>
         </div>
+        <!--
         <div class="card-footer">
-          <button class="btn-azul-medio">Mas información</button>
+          <button id="chatButton" class="btn-azul-medio">Mas información</button>
         </div>
+        -->
       </div>
       <div class="card" data-aos="zoom-in-down" data-aos-duration="3000">
         <img src="/img/2.jpg" alt="Image 3" class="card-img">
         <div class="card-body">
           <h5 class="card-title">Cableado Estructurado</h5>
-          <p class="card-text">Diseño, instalación y organización de redes cableadas de alta eficiencia y durabilidad, cumpliendo con normas de calidad y seguridad.</p>
+          <p class="card-text">Diseño, instalación y organización de redes cableadas de alta eficiencia y durabilidad,
+            cumpliendo con normas de calidad y seguridad.</p>
         </div>
+        <!--
         <div class="card-footer">
-          <button class="btn-azul-medio">Mas información</button>
+          <button id="chatButton" class="btn-azul-medio">Mas información</button>
         </div>
+        -->
       </div>
       <div class="card" data-aos="zoom-in-down" data-aos-duration="3000">
         <img src="/img/12.png" alt="Image 4" class="card-img">
         <div class="card-body">
           <h5 class="card-title">Sistemas de CCTV</h5>
-          <p class="card-text">Puesta en marcha de sistemas de videovigilancia, incluyendo cámaras de seguridad y equipos de grabación, con configuraciones adaptadas a las necesidades del cliente.</p>
+          <p class="card-text">Puesta en marcha de sistemas de videovigilancia, incluyendo cámaras de seguridad y
+            equipos de grabación, con configuraciones adaptadas a las necesidades del cliente.</p>
         </div>
+        <!--
         <div class="card-footer">
-          <button class="btn-azul-medio">Mas información</button>
+          <button id="chatButton" class="btn-azul-medio">Mas información</button>
         </div>
+      -->
       </div>
       <div class="card" data-aos="zoom-in-down" data-aos-duration="3000">
         <img src="/img/1.jpg" alt="Image 5" class="card-img">
@@ -137,18 +150,21 @@
           <h5 class="card-title">Páginas Web</h5>
           <p class="card-text">Creación de sitios web a medida, para la presencia digital de tu negocio</p>
         </div>
+        <!--
         <div class="card-footer">
-          <button class="btn-azul-medio">Mas información</button>
+          <button id="chatButton" class="btn-azul-medio">Mas información</button>
         </div>
+        -->
       </div>
     </div>
-  </div>  
+  </div>
   <!--Section Hero-->
   <section class="hero transparentOverlay" data-aos="zoom-in-down" data-aos-duration="3000">
     <div class="content">
       <div class="phrase">
         <p>Nuestro equipo especializado está preparado para brindarte soluciones efectivas ante cualquier desafío
-          tecnológico. Además, te ofreceremos respaldo constante en cada proceso que necesites, de las siguientes maneras
+          tecnológico. Además, te ofreceremos respaldo constante en cada proceso que necesites, de las siguientes
+          maneras
         </p>
         <br>
         <div class="support">
@@ -158,32 +174,29 @@
       </div>
     </div>
   </section>
-  <div class="hero2" data-aos="zoom-in-down" data-aos-duration="3000">
+  <div id="heroForm" class="hero2" data-aos="zoom-in-down" data-aos-duration="3000">
     <div class="chatea-nosotros">
       <h4>Conversemos</h4>
-      <p>Contáctenos para crear una solución a su medida. Estamos listos para satisfacer sus necesidades en el ámbito de TI y asesorarle en la implementación de tecnologías adecuadas para su negocio</p>
+      <p>Contáctenos para crear una solución a su medida. Estamos listos para satisfacer sus necesidades en el ámbito de
+        TI y asesorarle en la implementación de tecnologías adecuadas para su negocio</p>
       <button id="chatButton" class="btn-azul-medio">Chatea con nosotros</button>
     </div>
-      <form id="form">
-        <label class="titulo-formulario" for="to_name">Contáctenos</label>
-        <div class="field">
-          <label for="to_name">Nombre de destinatario</label>
-          <input type="text" name="to_name" id="to_name">
-        </div>
-        <div class="field">
-          <label for="from_name">Su nombre</label>
-          <input type="text" name="from_name" id="from_name">
-        </div>
-        <div class="field">
-          <label for="message">Su mensaje aquí:</label>
-          <input type="text" name="message" id="message">
-        </div>
-        <div class="field">
-          <label for="reply_to">Su correo electrónico</label>
-          <input type="text" name="reply_to" id="reply_to">
-        </div>
-        <input type="submit" id="button-form" value="Send Email" >
-      </form>
+    <form id="form">
+      <label class="titulo-formulario" for="to_name">Contáctenos</label>
+      <div class="field">
+        <label for="to_name">Nombre de destinatario</label>
+        <input type="text" name="to_name" id="to_name" value="JECA I.T.">
+      </div>
+      <div class="field">
+        <label for="from_name">Su nombre</label>
+        <input type="text" name="from_name" id="from_name">
+      </div>
+      <div class="field">
+        <label for="message">Escriba su mensaje aquí, coloque su requerimiento de soporte e información de contacto:</label>
+        <input type="text" name="message" id="message">
+      </div>
+      <input type="submit" id="formButton" value="Send Email">
+    </form>
   </div>
   <!--Section Footer-->
   <footer class="footer" data-aos="zoom-in-down" data-aos-duration="3000">
@@ -222,8 +235,9 @@
       </div>
       <div class="footerSocial">
         <h4>Síguenos en:</h4>
-        <a href="https://www.facebook.com/profile.php?id=61567720207045&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i> Facebook</a> <br>
-        <a href="https://www.instagram.com/jecasolucionesti/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61567720207045&mibextid=ZbWKwL" target="_blank"><i
+            class="fab fa-facebook"></i></a> 
+        <a href="https://www.instagram.com/jecasolucionesti/" target="_blank"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
     <div class="footerCopyright">

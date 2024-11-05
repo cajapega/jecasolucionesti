@@ -95,8 +95,7 @@ setInterval(() => {
 }, 5000); // Cambiar de slide cada 5 segundos
 
 //Formulario EmailJs
-
-const btn = document.getElementById('button-form');
+const btn = document.getElementById('formButton');
 
 document.getElementById('form')
  .addEventListener('submit', function(event) {
@@ -105,12 +104,12 @@ document.getElementById('form')
    btn.value = 'Sending...';
 
    const serviceID = 'default_service';
-   const templateID = 'template_zb9lta5';
+   const templateID = 'template_baacr4o';
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'Send Email';
-      alert('Sent!');
+      alert('Tu mensaje se ha enviado exitosamente a JECA Soluciones I.T.');
     }, (err) => {
       btn.value = 'Send Email';
       alert(JSON.stringify(err));

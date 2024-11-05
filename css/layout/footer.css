@@ -36,24 +36,33 @@
 }
 
 .footerContainer p, a {
-
+    font-size: 0.8em;
     text-align: left;
     color: white;
-    line-height: 300%;
+    line-height: 150%;
     
 }
 
+.footerSocial i { font-size: 3em; margin-inline: 10px;}
+
 .footer .footerCopyright {
     margin-block: 5%;
+    margin-inline: 5%;
 }
 
 .footer .footerCopyright p {
     font-weight: bolder;
     color: white;
+    text-align: center;
 }
 
 
 @media (max-width: 768px) {
+
+    .footer {
+        position: relative;
+        top: 11vh;
+    }
 
     .footer .footerLogo {
         margin-block: 10%;
