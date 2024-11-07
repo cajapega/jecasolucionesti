@@ -14,7 +14,7 @@
 
 .footerContainer {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(3, 1fr); 
     grid-template-rows: repeat(1, 1fr); 
     column-gap: 5%;
     row-gap: 5vh;
@@ -36,14 +36,14 @@
 }
 
 .footerContainer p, a {
-    font-size: 0.8em;
+    font-size: 0.7em;
     text-align: left;
     color: white;
     line-height: 150%;
     
 }
 
-.footerSocial i { font-size: 3em; margin-inline: 10px;}
+.footerSocial i { font-size: 3em; margin-inline: 10px; margin-block: 5px;}
 
 .footer .footerCopyright {
     margin-block: 5%;
@@ -51,6 +51,7 @@
 }
 
 .footer .footerCopyright p {
+    font-size: 1.2em;
     font-weight: bolder;
     color: white;
     text-align: center;
@@ -69,10 +70,11 @@
     }
 
     .footerContainer {
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(1, 1fr); 
     }
 
     .footer .footerCopyright {
+        font-size: 0.8em;
         margin-block: 15%;
 
     }

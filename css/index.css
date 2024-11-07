@@ -122,6 +122,7 @@ body {
   
   .card-text {
     font-size: 1rem;
+    text-align: center;
     color: #555;
   }   
   
