@@ -16,7 +16,6 @@ Sitio web creado en **HTML5** con soporte para estilos gestionados mediante CSS,
 ```
 ├── img
 │   ├── logos
-│   └── slides
 ├── css
 │   ├── base
 │   ├── components
